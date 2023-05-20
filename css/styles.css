@@ -1,0 +1,673 @@
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("../fonts/TT-Lakes-Neue-Trial-Regular.woff") format("woff"),
+    url("../fonts/TT-Lakes-Neue-Trial-Regular.woff2") format("woff2"),
+    url("../fonts/TT-Lakes-Neue-Trial-Regular.svg#TT-Lakes-Neue-Trial-Regular")
+      format("svg"),
+    url("../fonts/TT-Lakes-Neue-Trial-Regular.eot"),
+    url("../fonts/TT-Lakes-Neue-Trial-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TT-Lakes-Neue-Trial-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT-Lakes-Neue";
+  src: url("../fonts/TT-Lakes-Neue-Trial-Bold.woff") format("woff"),
+    url("../fonts/TT-Lakes-Neue-Trial-Bold.woff2") format("woff2"),
+    url("../fonts/TT-Lakes-Neue-Trial-Bold.svg#TT-Lakes-Neue-Trial-Bold")
+      format("svg"),
+    url("../fonts/TT-Lakes-Neue-Trial-Bold.eot"),
+    url("../fonts/TT-Lakes-Neue-Trial-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/TT-Lakes-Neue-Trial-Bold.ttf") format("truetype");
+
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "StoneSoupNF";
+  src: url("../fonts/StoneSoupNF.woff") format("woff"),
+    url("../fonts/StoneSoupNF.woff2") format("woff2"),
+    url("../fonts/StoneSoupNF.svg#StoneSoupNF") format("svg"),
+    url("../fonts/StoneSoupNF.eot"),
+    url("../fonts/StoneSoupNF.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/StoneSoupNF.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "TT-Lakes-Neue";
+  background-color: #000;
+  background-image: url(../images/paws.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 3400px;
+}
+
+/* HEADER */
+
+.header {
+  min-height: 800px;
+  background: linear-gradient(
+      rgba(0, 0, 0, 1) 45.56%,
+      rgba(0, 0, 0, 0.8) 56.45%,
+      rgba(0, 0, 0, 0.6) 67.34%,
+      rgba(0, 0, 0, 0.4) 78.23%,
+      rgba(0, 0, 0, 0.2) 89.11%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../images/header/background.png);
+
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-size: auto 173px, cover;
+  background-position: top, center;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  width: 100%;
+  height: 208px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 1) 18.83%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  position: absolute;
+  top: 650px;
+}
+
+/* header-top */
+
+.header-top {
+  padding: 60px 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logowrap {
+  display: block;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  margin-right: 24px;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.header-menu,
+.header-menu__list,
+.header-top__social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  position: relative;
+}
+
+.header-menu__item:not(:last-child) {
+  margin-right: 24px;
+}
+
+.header-menu__link {
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.header-top__social-item {
+  width: 24px;
+  height: 24px;
+}
+
+.header-top__social-item:not(:first-child) {
+  margin-left: 34px;
+}
+
+.header-menu__decor-foliage {
+  width: 1265px;
+  height: 1105px;
+  background-image: url(../images/foliage.png);
+  position: absolute;
+  margin-left: 285px;
+  top: 115px;
+  z-index: 22;
+}
+
+/* header-description */
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.header-description {
+  text-align: center;
+}
+
+.header-description__paragraph {
+  font-family: "StoneSoupNF";
+  font-size: 32px;
+  line-height: 39px;
+  color: #c2e978;
+  letter-spacing: 2px;
+}
+
+.paragraph {
+  margin-bottom: 110px;
+}
+
+.header-description__titlewrap {
+  width: 554px;
+  height: 94px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  margin-left: -277px;
+  top: 210px;
+}
+
+.header-description__text {
+  width: 800px;
+  margin: 16px auto;
+  font-size: 26px;
+  line-height: 38px;
+  color: #fff;
+}
+
+.header-description__textline {
+  font-family: "StoneSoupNF";
+  font-size: 48px;
+  line-height: 46px;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-top: 72px;
+}
+
+.header-description--green-color,
+.get-title--green-color {
+  color: #c2e978;
+}
+
+.header-description__textindent {
+  width: 606px;
+  margin: 12px auto;
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  padding-bottom: 110px;
+}
+
+/* +4 new big decor/ +js?/ +hover */
+
+/* MAIN */
+/* subscribe */
+
+.subscribe-content {
+  min-height: 355px;
+  margin-bottom: 48px;
+  padding-left: 76px;
+  padding-right: 96px;
+  background-image: linear-gradient(#0e1a19 0%, #133b2a 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.subscribe-content__text {
+  width: 240px;
+  font-family: "StoneSoupNF";
+  font-size: 48px;
+  line-height: 46px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.subscribe-content__text--green-text {
+  width: 300px;
+  font-size: 53px;
+  line-height: 53px;
+  color: #c2e978;
+  margin-left: 20px;
+}
+
+.subscribe-content__box {
+  width: 298px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.subscribe-content__paragraph {
+  font-size: 25px;
+  line-height: 32px;
+  text-align: right;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.btn {
+  min-width: 188px;
+  height: 61px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c2e978;
+  padding: 12px;
+  font-family: "TT-Lakes-Neue";
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #08162b;
+  letter-spacing: 3px;
+}
+
+.subscribe-content__decor-tree {
+  width: 322px;
+  height: 515px;
+  background-image: url(../images/subscribe/tree.svg);
+  position: absolute;
+  left: 50%;
+  margin-left: -161px;
+  top: -90px;
+  z-index: 33;
+}
+
+/* parameters */
+
+.parameters-content,
+.get-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.title {
+  font-family: "StoneSoupNF";
+  font-size: 48px;
+  line-height: 46px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.parameters-content__box,
+.get-content__box {
+  width: 558px;
+  min-height: 192px;
+  background-color: #191d2e;
+  padding: 32px 24px;
+}
+
+.parameters-content__subtitle {
+  font-family: "StoneSoupNF";
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #c2e978;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.parameters-content__box:nth-child(odd) {
+  margin-right: 10px;
+}
+
+.parameters-content__box:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 10px;
+}
+
+/* get */
+
+.get-title__decor-star::before,
+.roadmap-title__decor-star::before,
+.tokenomics-title__decor-star::before,
+.collection-title__decor-star::after {
+  content: "";
+  width: 20px;
+  height: 55px;
+  display: inline-block;
+  background-image: url(../images/star.svg);
+  background-repeat: no-repeat;
+}
+
+.get-content__text {
+  margin-top: 50px;
+}
+
+.get-content__box:not(:nth-child(3n)) {
+  margin-right: 10px;
+}
+
+.get-content__box:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 10px;
+}
+
+.get-content__box,
+.get-content__box--tree {
+  width: 369px;
+  min-height: 202px;
+  background-image: url(../images/get/getbox1.svg);
+  background-size: 41px 47px;
+  background-repeat: no-repeat;
+  background-position: 24px 32px;
+}
+
+.get-content__box--diamond {
+  background-image: url(../images/get/getbox2.svg);
+  background-size: 50px 50px;
+}
+
+.get-content__box--picture {
+  background-image: url(../images/get/getbox3.svg);
+  background-size: 47px 47px;
+}
+
+.get-content__box--dollar {
+  background-image: url(../images/get/getbox4.svg);
+  background-size: 46px 43px;
+}
+
+.get-content__box--foliage {
+  background-image: url(../images/get/getbox5.svg);
+  background-size: 47px 38px;
+}
+
+.get-content__box--wood {
+  background-image: url(../images/get/getbox6.svg);
+  background-size: 47px 47px;
+}
+
+/* collection */
+
+.collection-content {
+  display: flex;
+  align-items: center;
+  margin-top: 143px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.collection-title {
+  width: 200px;
+  text-align: start;
+  margin-left: 76px;
+}
+
+.collection-title__decor-star::after {
+  position: absolute;
+  top: -25px;
+  left: 240px;
+}
+
+.collection-title--green-text {
+  font-size: 53px;
+  line-height: 65px;
+  color: #c2e978;
+  margin-left: 20px;
+}
+
+.collection-content__text {
+  width: 649px;
+  margin-left: 103px;
+}
+
+.collection-imgwrap {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.collection-imgwrap__img {
+  width: 370px;
+  height: 363px;
+  overflow: hidden;
+}
+.collection-imgwrap__img:not(:last-child) {
+  margin-right: 10px;
+}
+
+.collection-buttonwrap {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.collection-buttonwrap__text {
+  margin-bottom: 16px;
+}
+
+.collection-buttonwrap__btn {
+  min-width: 370px;
+  padding: 12px 24px;
+  letter-spacing: 2px;
+}
+
+/* tokenomics */
+
+.tokenomics-content {
+  width: 100%;
+  min-height: 401px;
+  display: flex;
+  padding: 64px 97px 57px 76px;
+  background-image: linear-gradient(#131624 0%, #191d2e 100%);
+  margin-bottom: 154px;
+  position: relative;
+}
+
+.tokenomics-title {
+  text-align: start;
+  margin-left: 20px;
+}
+
+.tokenomics-title__decor-star::before {
+  position: absolute;
+  top: 45px;
+  left: 70px;
+}
+
+.tokenomics-content__text {
+  margin-left: 50px;
+}
+
+.tokenomics-content__list {
+  line-height: 24px;
+  margin-top: 32px;
+  list-style: none;
+  counter-reset: ol-numbers;
+}
+
+.tokenomics-content__item::before {
+  counter-increment: ol-numbers;
+  content: counter(ol-numbers) "";
+  width: 24px;
+  line-height: 24px;
+  margin-right: 12px;
+  display: inline-block;
+  background-color: #2f323a;
+  color: #c2e978;
+  text-align: center;
+  border-radius: 30%;
+}
+
+.tokenomics-content__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.tokenomics-content__paragraph {
+  font-size: 18px;
+  margin-top: 32px;
+}
+
+/* roadmap */
+
+.roadmap-title {
+  text-align: start;
+  margin-left: 76px;
+}
+
+.roadmap-content,
+.team-content {
+  display: flex;
+  margin-bottom: 103px;
+}
+
+.roadmap-content__box {
+  width: 274px;
+  min-height: 240px;
+  padding: 32px 24px;
+  background-image: linear-gradient(#10121d 0%, #191d2e 100%);
+  position: relative;
+}
+
+.roadmap-content__box-icon {
+  font-size: 56px;
+  color: #7e839a;
+}
+
+.roadmap-content__box:not(:last-child) {
+  margin-right: 10px;
+}
+
+.roadmap-content__text {
+  margin-top: 12px;
+  color: #7e839a;
+}
+
+/* .roadmap-content__box:hover {
+  background-image: linear-gradient(#013742 0%, #077e4c 100%);
+  cursor: pointer;
+} */
+
+/* 
+.roadmap-content__box:hover .roadmap-content__box-icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  color: #c2e978;
+}
+
+.roadmap-content__box:hover .roadmap-content__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  color: #fff;
+} */
+
+/* .roadmap-content__box-icon:hover {
+  color: #c2e978;
+} */
+
+/* .roadmap-content__text:hover {
+  color: #fff;
+} */
+
+.roadmap-content__decor-foliage {
+  width: 1265px;
+  height: 1205px;
+  background-image: url(../images/foliage.png);
+  position: absolute;
+  margin-left: -880px;
+  top: -100px;
+}
+
+/* team */
+
+.team-title {
+  font-size: 72px;
+}
+
+.team-content__box {
+  width: 210px;
+  min-height: 363px;
+}
+
+.team-content__box:not(:last-child) {
+  margin-right: 20px;
+}
+
+.team-content__imgwrap {
+  width: 200px;
+  height: 237px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.team-content__team-name {
+  font-family: "StoneSoupNF";
+  font-size: 32px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.team-content__team-description {
+  font-size: 15px;
+  line-height: 24px;
+  color: #888d9d;
+  text-align: center;
+}
+
+/* FOOTER */
+
+.footer-imgwrap {
+  width: 100%;
+  min-height: 207px;
+  overflow: hidden;
+  margin-bottom: 80px;
+}
+
+.footer-line {
+  font-family: "StoneSoupNF";
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 51px;
+}
+
+.footer-line__decor-leaf::before {
+  content: "";
+  width: 55px;
+  height: 50px;
+  display: inline-block;
+  background-image: url(../images/footer/leaf.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

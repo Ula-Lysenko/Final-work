@@ -8,11 +8,23 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
     <title>Sequoia NFT Park</title>
     <link rel="stylesheet" href="css/fonts icomoon.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5cdbb0d0ce.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
       <div class="header-top">
+        <div class="header-top__arrow">
+          <a class="header-top__arrow-up" href="#"
+            ><i class="fa-sharp fa-solid fa-caret-up"></i
+          ></a>
+        </div>
+
         <nav class="header-menu">
           <a class="header-logowrap" href="#"
             ><img src="images/header/logo.svg" alt="logo"
@@ -32,7 +44,7 @@
               <a class="header-menu__link" href="#classic">classic</a>
             </li>
             <li class="header-menu__item">
-              <a class="header-menu__link" href="#">airdrop</a>
+              <a class="header-menu__link" href="#airdrop">airdrop</a>
             </li>
             <li class="header-menu__item">
               <a class="header-menu__link" href="#tokemonics">tokemonics</a>
@@ -44,7 +56,6 @@
               <a class="header-menu__link" href="#team">team</a>
             </li>
           </ul>
-          <span class="header-menu__decor-foliage"></span>
         </nav>
 
         <ul class="header-top__social-icons">
@@ -76,14 +87,14 @@
 
       <div class="container">
         <div class="header-description">
-          <p class="header-description__paragraph paragraph">welcome to</p>
+          <p class="header-description__paragraph header-description__leaf">
+            welcome to
+          </p>
 
-          <h1 class="header-description__titlewrap">
-            <img src="images/header/H1 title.svg" alt="Sequoia NFT Park" />
-          </h1>
+          <h1 class="header-description__title">Sequoia NFT Park</h1>
 
           <p class="header-description__paragraph">
-            FIRST SOCIAL-ECOLOGICAL NFT PROJECT
+            first social-ecological NFT project
           </p>
 
           <p class="header-description__text">
@@ -168,7 +179,7 @@
       </div>
 
       <div class="container">
-        <h2 id="purchasing" class="get-title title get-title__decor-star">
+        <h2 id="purchasing" class="get-title title">
           By purchasing a
           <span class="get-title--green-color">NFT tree token you get:</span>
         </h2>
@@ -215,7 +226,7 @@
 
       <div class="container">
         <div id="classic" class="collection-content">
-          <h2 class="collection-title title collection-title__decor-star">
+          <h2 class="collection-title title">
             classic nft
             <span class="collection-title--green-text">collection</span>
           </h2>
@@ -226,7 +237,7 @@
             all subsequent projects with a social component.
           </p>
         </div>
-        <div class="collection-imgwrap">
+        <div class="collection-imgwrap carousel">
           <img
             class="collection-imgwrap__img"
             src="images/collection/green img1.png"
@@ -242,6 +253,21 @@
             src="images/collection/pink img3.png"
             alt="NFT tree"
           />
+          <img
+            class="collection-imgwrap__img"
+            src="images/collection/monkey1.png"
+            alt="NFT monkey"
+          />
+          <img
+            class="collection-imgwrap__img"
+            src="images/collection/monkey2.png"
+            alt="NFT monkey"
+          />
+          <img
+            class="collection-imgwrap__img"
+            src="images/collection/monkey3.png"
+            alt="NFT monkey"
+          />
         </div>
         <div class="collection-buttonwrap">
           <p class="collection-buttonwrap__text text">
@@ -254,10 +280,66 @@
       </div>
 
       <div class="container">
+        <h2 id="airdrop" class="airdrop-title title">airdrop</h2>
+        <p class="airdrop-paragraph">
+          At the start we will raffle off Airdrogors of 1OO tokens:
+        </p>
+
+        <div class="airdrop-content">
+          <div class="airdrop-content__box">
+            <div class="airdrop-content__number airdrop-content__number--green">
+              75
+            </div>
+
+            <p
+              class="airdrop-content__paragraph airdrop-content__paragraph--green"
+            >
+              regular
+            </p>
+          </div>
+
+          <div class="airdrop-content__box">
+            <div
+              class="airdrop-content__number airdrop-content__number--orange"
+            >
+              2O
+            </div>
+            <p
+              class="airdrop-content__paragraph airdrop-content__paragraph--orange"
+            >
+              rare
+            </p>
+          </div>
+
+          <div class="airdrop-content__box airdrop-content__box-five">
+            <div
+              class="airdrop-content__number airdrop-content__number--fuchsia"
+            >
+              5
+            </div>
+            <p
+              class="airdrop-content__paragraph airdrop-content__paragraph--fuchsia"
+            >
+              very rare
+            </p>
+          </div>
+
+          <div class="airdrop-content__box">
+            <div class="airdrop-content__number airdrop-content__number--white">
+              1O
+            </div>
+            <p
+              class="airdrop-content__paragraph airdrop-content__paragraph--white"
+            >
+              10 tree tokens
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
         <div id="tokemonics" class="tokenomics-content">
-          <h2 class="tokenomics-title title tokenomics-title__decor-star">
-            Tokenomics
-          </h2>
+          <h2 class="tokenomics-title title">Tokenomics</h2>
           <div class="tokenomics-content__text text">
             <p>
               Each NFT tree token generates a certain number of ERC20 standard
@@ -284,12 +366,11 @@
       </div>
 
       <div class="container">
-        <h2 id="roadmap" class="roadmap-title title roadmap-title__decor-star">
-          roadmap
-        </h2>
+        <h2 id="roadmap" class="roadmap-title title">roadmap</h2>
         <div class="roadmap-content">
           <div class="roadmap-content__box">
             <span class="icon-roadmap1 roadmap-content__box-icon"></span>
+
             <p class="roadmap-content__text text">
               Creation and design of a landing page
             </p>
@@ -311,7 +392,6 @@
             <p class="roadmap-content__text text">
               Creation of smart contracts based on Ethereum & Solana networks
             </p>
-            <span class="roadmap-content__decor-foliage"></span>
           </div>
         </div>
       </div>
@@ -320,7 +400,7 @@
         <h2 id="team" class="team-title title">team</h2>
 
         <div class="team-content">
-          <div class="team-content__box">
+          <div class="team-content__box team-content__leafR">
             <div class="team-content__imgwrap">
               <img src="images/team/team1.svg" alt="foto" />
             </div>
@@ -330,7 +410,7 @@
             </p>
           </div>
 
-          <div class="team-content__box">
+          <div class="team-content__box team-content__leafD">
             <div class="team-content__imgwrap">
               <img src="images/team/team2.svg" alt="foto" />
             </div>
@@ -350,7 +430,7 @@
             </p>
           </div>
 
-          <div class="team-content__box">
+          <div class="team-content__box team-content__leafL">
             <div class="team-content__imgwrap">
               <img src="images/team/team4.svg" alt="foto" />
             </div>
@@ -360,7 +440,7 @@
             </p>
           </div>
 
-          <div class="team-content__box">
+          <div class="team-content__box team-content__leafG">
             <div class="team-content__imgwrap">
               <img src="images/team/team5.svg" alt="foto" />
             </div>
@@ -375,15 +455,40 @@
 
     <footer>
       <div class="container">
-        <div class="footer-imgwrap">
-          <a href="#"
-            ><img src="images/footer/footer.png" alt="img share width friends"
-          /></a>
+        <div class="footer-description">
+          <h2 class="footer-description__title title">
+            do you like it?
+            <span class="footer-description__title--green-title"
+              >share width friends</span
+            >
+          </h2>
+
+          <ul class="footer-description__social-icons">
+            <li class="footer-description__social-item">
+              <svg>
+                <use xlink:href="images/footer/sprite.svg#twitter" />
+              </svg>
+            </li>
+
+            <li class="footer-description__social-item">
+              <svg>
+                <use xlink:href="images/footer/sprite.svg#facebook" />
+              </svg>
+            </li>
+
+            <li class="footer-description__social-item">
+              <svg>
+                <use xlink:href="images/footer/sprite.svg#instagram" />
+              </svg>
+            </li>
+          </ul>
         </div>
-        <p class="footer-line footer-line__decor-leaf">
-          © 2021 Sequioa nft park
-        </p>
+
+        <p class="footer-bottom">© 2021 Sequioa nft park</p>
       </div>
     </footer>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

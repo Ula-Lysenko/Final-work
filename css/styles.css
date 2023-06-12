@@ -65,7 +65,7 @@ body {
 
 /* HEADER */
 
-.header--background {
+.header {
   min-height: 800px;
   background: linear-gradient(
       rgba(0, 0, 0, 1) 45.56%,
@@ -84,7 +84,7 @@ body {
   position: relative;
 }
 
-.header--background::after {
+.header::after {
   content: "";
   width: 100%;
   height: 208px;
@@ -198,19 +198,19 @@ svg {
   transition: 0.5s;
 }
 
-/* description-top */
+/* header-description */
 
 .container {
   max-width: 1128px;
   margin: 0 auto;
 }
 
-.description-top {
+.header-description {
   text-align: center;
   position: relative;
 }
 
-.description-top__paragraph {
+.header-description__paragraph {
   font-family: "StoneSoupNF";
   font-size: 32px;
   line-height: 39px;
@@ -218,7 +218,7 @@ svg {
   letter-spacing: 2px;
 }
 
-.description-top__title {
+.header-description__title {
   font-family: "StoneSoupNF";
   font-size: 135px;
   font-weight: 400;
@@ -227,7 +227,7 @@ svg {
   margin: 0 0;
 }
 
-.description-top__text {
+.header-description__text {
   width: 800px;
   margin: 16px auto;
   font-size: 26px;
@@ -235,7 +235,7 @@ svg {
   color: #fff;
 }
 
-.description-top__textline {
+.header-description__textline {
   font-family: "StoneSoupNF";
   font-size: 48px;
   line-height: 46px;
@@ -244,12 +244,12 @@ svg {
   margin-top: 42px;
 }
 
-.description-top--green-color,
+.header-description--green-color,
 .get-title--green-color {
   color: #c2e978;
 }
 
-.description-top__textindent {
+.header-description__textindent {
   width: 606px;
   margin: 12px auto;
   font-size: 20px;
@@ -257,9 +257,9 @@ svg {
   color: #fff;
 }
 
-.description-top__leaf::before,
-.description-top__textline::before,
-.description-top__text::after {
+.header-description__leaf::before,
+.header-description__textline::before,
+.header-description__text::after {
   content: "";
   width: 55px;
   height: 55px;
@@ -267,8 +267,8 @@ svg {
   background-image: url(../images/header/leaf1.svg);
 }
 
-.description-top__title::before,
-.description-top__textindent::before {
+.header-description__title::before,
+.header-description__textindent::before {
   content: "";
   width: 75px;
   height: 55px;
@@ -280,7 +280,7 @@ svg {
   animation: foliage 17s linear infinite;
 }
 
-.description-top__title::after {
+.header-description__title::after {
   content: "";
   width: 55px;
   height: 55px;
@@ -293,11 +293,11 @@ svg {
   animation-delay: -2s;
 }
 
-.description-top__textline::before {
+.header-description__textline::before {
   background-image: url(../images/header/leaf4.svg);
 }
 
-.description-top__textindent::before {
+.header-description__textindent::before {
   background-image: url(../images/header/leaf5.svg);
   top: 450px;
   left: -210px;
@@ -305,7 +305,7 @@ svg {
   animation-delay: -4s;
 }
 
-.description-top__text::after {
+.header-description__text::after {
   background-image: url(../images/header/leaf6.svg);
 }
 
